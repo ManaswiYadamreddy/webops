@@ -22,7 +22,7 @@
     </div > 
       <div class="text">
         <div class="t1">
-            Lorem Ipsum Dolor <span class="blue"> Lorem Ipsum</span>
+           <p id="f1"> Lorem Ipsum Dolor <span class="blue"> Lorem Ipsum</span></p>
         </div>
         <div class="t2">
             <div class="line1">
@@ -36,8 +36,8 @@
       </div> 
       <div class="button-div">
         <div class="empty"> </div>
-        <button class="button1">Button 1 </button>
-        <button class="button2">Button 2</button>
+        <button class="button1" onclick="change_text1()">Button 1 </button>
+        <button class="button2" onclick="change_text2()">Button 2</button>
         <div class="empty"> </div>
       </div>
       <div class="last">
@@ -75,5 +75,16 @@
             <div class="empty"></div>
         </div>
       </div>
+      <script>
+        function change_text1()
+        {
+            document.getElementById("f1").innerHTML="You clicked Button 1"
+        }
+	function change_text2()
+        {
+
+		document.getElementById("f1").innerHTML="You clicked Button 2"
+        }
+      </script>
     </body>
 </html>
